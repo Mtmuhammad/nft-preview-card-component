@@ -37,7 +37,7 @@ body {
 }
 .card-img img {
   background-color: #00fff78f;
-  padding: 114.5px;
+  padding: 116px 114px;
   border-radius: 10px;
   opacity: 0;
   transition: all ease 0.3s;
