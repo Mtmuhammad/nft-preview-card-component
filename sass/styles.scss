@@ -1,0 +1,143 @@
+@use "_variables.scss" as v;
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: v.$main-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  flex-direction: column;
+}
+
+.card {
+  width: 275px;
+  height: 100%;
+  background: v.$card-bg;
+  padding: 23px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-img {
+    background-image: url("../images/image-equilibrium.jpg");
+    background-size: cover;
+    width: 100%;
+    background-position: center center;
+    border-radius: 10px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & img {
+      background-color: v.$cyan-opaque;
+      padding: 114.5px;
+      border-radius: 10px;
+      opacity: 0;
+      transition: all ease 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-title {
+    color: v.$white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: -5px;
+
+    &:hover {
+      color: v.$cyan;
+    }
+  }
+
+  &-text {
+    color: v.$soft-blue;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+
+    &_nft {
+      display: flex;
+      align-items: center;
+      color: v.$cyan;
+      font-weight: 600;
+
+      & img {
+        margin-right: 5px;
+      }
+    }
+    &_time {
+      display: flex;
+      align-items: center;
+      color: v.$soft-blue;
+      font-weight: 300;
+
+      & img {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    & img {
+      height: 30px;
+      border: 1px solid v.$white;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    &_text {
+      color: v.$soft-blue;
+      font-weight: 300;
+
+      & span {
+        color: v.$white;
+        cursor: pointer;
+
+        &:hover {
+          color: v.$cyan;
+        }
+      }
+    }
+  }
+
+  &-divider {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: 0.1px solid v.$line;
+  }
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: v.$white;
+
+  & a {
+    color: v.$soft-blue;
+
+    &:hover {
+      color: v.$link;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0d192b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  flex-direction: column;
+}
+
+.card {
+  width: 275px;
+  height: 100%;
+  background: #14253d;
+  padding: 23px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-img {
+  background-image: url("../images/image-equilibrium.jpg");
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  border-radius: 10px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card-img img {
+  background-color: #00fff78f;
+  padding: 114.5px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.card-img img:hover {
+  opacity: 1;
+}
+.card-title {
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: -5px;
+}
+.card-title:hover {
+  color: #00fff7;
+}
+.card-text {
+  color: #8bacda;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+.card-info_nft {
+  display: flex;
+  align-items: center;
+  color: #00fff7;
+  font-weight: 600;
+}
+.card-info_nft img {
+  margin-right: 5px;
+}
+.card-info_time {
+  display: flex;
+  align-items: center;
+  color: #8bacda;
+  font-weight: 300;
+}
+.card-info_time img {
+  margin-right: 5px;
+}
+.card-user {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card-user img {
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.card-user_text {
+  color: #8bacda;
+  font-weight: 300;
+}
+.card-user_text span {
+  color: #ffffff;
+  cursor: pointer;
+}
+.card-user_text span:hover {
+  color: #00fff7;
+}
+.card-divider {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border: 0.1px solid #2f415b;
+}
+
+.attribution {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+.attribution a {
+  color: #8bacda;
+}
+.attribution a:hover {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
